@@ -7,7 +7,7 @@ on:
 jobs:
   print:
     name: Notify
-    #if: ${{ on.script.outputs.termineVorhanden }}
+    if: ${{ on.script.outputs.termineVorhanden }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "Es sind Impftermine vorhanden"
