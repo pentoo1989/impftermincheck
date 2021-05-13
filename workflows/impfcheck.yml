@@ -16,8 +16,8 @@ jobs:
         with:
           server_address: ${{secrets.MAIL_SERVER}}
           server_port: ${{secrets.MAIL_PORT}}
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
+          #username: ${{secrets.MAIL_USERNAME}}
+          #password: ${{secrets.MAIL_PASSWORD}}
           subject: "Impftermincheck: Es sind Impftermine verfügbar!"
           body: "Es sind Impftermine verfügbar!"
           to: ${{secrets.MAIL_RECIPIENTS}}
